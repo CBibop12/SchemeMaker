@@ -1,0 +1,172 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.blackCover {
+  background-color: transparent;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+.row {
+  display: flex;
+}
+
+.pixel {
+  width: 10px;
+  height: 10px;
+  background-color: #8d8d8d;
+}
+
+.pixel:hover {
+  border: black solid 1px;
+}
+.screen {
+  margin-right: 20px;
+  
+}
+.name,
+.sizeInput, .inputArrayText {
+  height: 30px;
+  border: none;
+  border-radius: 100px;
+  padding: 15px;
+}
+.arrInputSec {
+  display: flex;
+  align-items: center;
+  width: 500px;
+  gap: 20px;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid white;
+}
+.inputArrayText {
+  flex: 1 0 0;
+}
+button {
+  height: 30px;
+  background-color: #fff;
+  border: none;
+  font-weight: bold;
+  transition: 0.2s;
+  width: 100px;
+  border-radius: 100px;
+}
+
+button:hover {
+  background-color: black;
+  border: 2px solid white;
+  color: white;
+}
+
+.gridSizeOptions button.active {
+  background-color: green;
+  border: 2px solid white;
+  color: white;
+}
+
+.gridSizeOptions button:hover {
+  background-color: green;
+}
+.topMenu, .optionsCover {
+  padding: 15px;
+  border: 1px solid white;
+  border-radius: 15px;
+  display: inline;
+  width: 500px;
+  display: flex;
+  justify-content: space-around;
+}
+.optionsCover {
+  flex-direction: column;
+  gap: 15px;
+  margin: 15px 0 20px;
+}
+.gridSizeOptions {
+  display: flex;
+  justify-content: space-between;
+}
+.result button {
+  margin: 15px;
+}
+
+.result p {
+  padding: 15px;
+  border: white 1px solid;
+  border-radius: 15px;
+  font-family: 'Courier New', Courier, monospace;
+  color: white;
+}
+
+.sizeInput {
+  width: 100px;
+}
+
+.setSizeButton, .saveColorButton {
+  width: 200px;
+}
+
+.coordinates {
+  color: white;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.recentColors {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex-direction: column;
+  gap: 8px;
+  border: 1px solid white;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+.recentColor {
+  color: white;
+  display: flex;
+  align-items: center;
+  margin: 0 5px;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  cursor: pointer;
+  transition: .2s;
+}
+.recentColor:hover {
+  background-color: rgb(102, 163, 52);
+}
+
+.colorBox {
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  border: 1px solid #fff;
+}
+.colorpicker {
+  height: 50px;
+  width: 50px;
+  border: none;
+  background-color: transparent;
+  
+}
+.colorOptions {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 20px;
+}
+.paintZone {
+  display: flex;
+  width: 100%;
+}
